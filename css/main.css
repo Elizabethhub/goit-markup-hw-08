@@ -865,9 +865,8 @@ html {
 }
 
 .section-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  display: block;
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -893,9 +892,8 @@ html {
 }
 
 .subscribe-form {
-  display: flex;
-  align-items: center;
-  flex: start;
+  display: block;
+  text-align: center;
 }
 
 .subscribe-form-input {
