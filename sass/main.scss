@@ -1,0 +1,63 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+@import "./components/button";
+@import "./components/social-links-list";
+@import "./components/icons-svg";
+@import "./components/modal";
+@import "./components/backdrop";
+@import "./components/forms";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/cards";
+@import "./layout/features-section";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/works";
+
+/* =================== HEADER =================== */
+
+/* =================== HERO =================== */
+
+/* =================== BUTTONS =================== */
+
+/* =================== PORTFOLIIO =================== */
+
+/* ================ END PORTFOLIO =============== */
+
+/* ================ FOOTER =============== */
+
+/* ================ SVG =============== */
+
+/* ================ CLIENTS =============== */
+
+/* ================ BACKDROP =============== */
+
+/* .modal-form-term-desc::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  
+  margin-right: 7px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 2px solid #212121;
+  outline: none;
+} */
+
+/* .modal-form-term:checked + .modal-form-term-desc::before {
+  /* fill: var(--accent-text-color);
+  background-color: var(--accent-text-color); */
+/* border: none;
+  background-image: url("../images/check-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/* } */
