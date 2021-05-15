@@ -1,7 +1,9 @@
 .portfolio-cards {
-  display: flex;
-  flex-wrap: wrap;
-
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   a {
     text-decoration: none;
   }
@@ -20,17 +22,28 @@
   color: #757575;
 }
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  text-align: center;
   margin-left: -30px;
   margin-top: -30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .card {
   display: block;
-  flex-basis: calc((100% - 90px) / 3);
+  text-align: center;
   margin-left: 30px;
   margin-top: 30px;
   border-bottom: 1px solid #eeeeee;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 .card-link {
   display: block;
@@ -47,6 +60,7 @@
 
 .card-img {
   display: block;
+  width: 100%;
 }
 .card-img-wrapper {
   position: relative;

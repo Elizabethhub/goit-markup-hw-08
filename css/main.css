@@ -140,12 +140,32 @@ html {
 
 .section-buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-buttons {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-buttons {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 
 .section-buttons .item:not(:last-child) {
   margin-right: 8px;
+}
+
+.section-buttons .item {
+  margin-top: 15px;
 }
 
 .subscribe-form-button {
@@ -590,8 +610,14 @@ html {
 }
 
 .portfolio-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-cards a {
@@ -613,18 +639,37 @@ html {
 }
 
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  text-align: center;
   margin-left: -30px;
   margin-top: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .card {
   display: block;
-  flex-basis: calc((100% - 90px) / 3);
+  text-align: center;
   margin-left: 30px;
   margin-top: 30px;
   border-bottom: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .card-link {
@@ -642,6 +687,7 @@ html {
 
 .card-img {
   display: block;
+  width: 100%;
 }
 
 .card-img-wrapper {
@@ -726,11 +772,19 @@ html {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-list {
@@ -866,9 +920,16 @@ html {
 
 .section-footer {
   display: block;
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 }
 
 .footer-item {
@@ -892,8 +953,9 @@ html {
 }
 
 .subscribe-form {
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex: start;
 }
 
 .subscribe-form-input {
