@@ -51,18 +51,19 @@
           </a>
         </li>
       </ul>
-      <button type="button" class="burger-open-button">
+      <button type="button" class="burger-open-button" data-menu-button>
         <svg class="burger-icon">
           <use href="./images/sprite.svg#burger-menu"></use>
         </svg>
       </button>
-      <div class="menu-mobile">
+      <div class="menu-mobile" data-menu>
+        <button class="mobile-menu-close" type="button" data-menu-close>
+          <svg class="close-button-icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
         <div class="container">
-          <button class="close-button" type="button" data-modal-close>
-            <svg class="close-button-icon">
-              <use href="./images/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+
           <nav class="nav-menu-mobile">
             <ul class="list mobile-list-link">
               <li><a target="_blank" href="" class="link menu-mobile-link">Студия</a></li>
@@ -523,7 +524,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
-
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -599,6 +599,15 @@ html {
   left: 0;
   top: 0;
   padding: 48px 40px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menu-mobile.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .menu-mobile-link {
@@ -655,6 +664,16 @@ html {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.menu-mobile .container {
+  position: relative;
 }
 
 .hero {
