@@ -17,11 +17,11 @@
 <body class="body">
   <!-- Шапка страницы -->
 
-  <!-- <header class="header">
+  <header class="header">
     <div class="container header__container">
-      <nav class="navigation header__navigation">  -->
-  <!-- Навигация на другие страницы -->
-  <!-- <a lang="en" href="/" class="logo header__logo link"><span class="logo__colortext">Web</span>Studio</a>
+      <nav class="navigation header__navigation">
+        <!-- Навигация на другие страницы -->
+        <a lang="en" href="/" class="logo header__logo link"><span class="logo__colortext">Web</span>Studio</a>
         <ul class="menu list">
           <li class="item">
             <a target="_blank" href="" class="link current">Студия</a>
@@ -33,9 +33,9 @@
             <a target="_blank" href="" class="link">Контакты</a>
           </li>
         </ul>
-      </nav> -->
-  <!-- contacts section -->
-  <!-- <ul class="header-contacts list">
+      </nav>
+      <!-- contacts section -->
+      <ul class="header-contacts list">
         <li class="item">
           <a class="contacts-section-link link " target="_blank" href="mailto:info@devstudio.com"><svg
               class="mail-icon">
@@ -51,8 +51,40 @@
           </a>
         </li>
       </ul>
+      <button type="button" class="burger-open-button">
+        <svg class="burger-icon">
+          <use href="./images/sprite.svg#burger-menu"></use>
+        </svg>
+      </button>
+      <div class="menu-mobile">
+        <div class="container">
+          <button class="close-button" type="button" data-modal-close>
+            <svg class="close-button-icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="nav-menu-mobile">
+            <ul class="list mobile-list-link">
+              <li><a target="_blank" href="" class="link menu-mobile-link">Студия</a></li>
+              <li><a target="_blank" href="./portfolio.html" class="link menu-mobile-link">Портфолио</a></li>
+              <li><a target="_blank" href="" class="link menu-mobile-link">Контакты</a></li>
+            </ul>
+            <ul class="list mobile-list-contacts">
+              <li><a target="_blank" href="" class="link menu-mobile-contacts mobile-tel">+38 096 111 11 11</a></li>
+              <li><a target="_blank" href="./portfolio.html" class="link menu-mobile-contacts">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="list mobile-list-network">
+              <li><a target="_blank" href="" class="link menu-mobile-network">Instagram</a></li>
+              <li><a target="_blank" href="./portfolio.html" class="link menu-mobile-network">Twitter</a></li>
+              <li><a target="_blank" href="" class="link menu-mobile-network">Facebook</a></li>
+              <li><a target="_blank" href="" class="link menu-mobile-network">LinkedIn</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-  </header>  -->
+  </header>
 
   <main>
     <!-- Герой -->

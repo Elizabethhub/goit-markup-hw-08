@@ -288,6 +288,23 @@ html {
   height: 70px;
 }
 
+.burger-icon {
+  width: 24px;
+  height: 16px;
+}
+
+.burger-open-button {
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-open-button {
+    display: none;
+  }
+}
+
 .modal {
   position: absolute;
   left: 50%;
@@ -446,9 +463,23 @@ html {
 
 .header {
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__container {
@@ -484,8 +515,15 @@ html {
 
 .menu,
 .header-contacts {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu,
+  .header-contacts {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .current::after {
@@ -551,6 +589,72 @@ html {
 .contacts-section-link-tel:hover,
 .contacts-section-link-tel:focus {
   color: var(--accent-text-color);
+}
+
+.menu-mobile {
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  padding: 48px 40px;
+}
+
+.menu-mobile-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.menu-mobile-link {
+  margin-bottom: 32px;
+}
+
+.mobile-list-contacts {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
+
+.menu-mobile-contacts {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: #757575;
+}
+
+.menu-mobile-contacts.mobile-tel {
+  margin-top: 302px;
+  font-size: 34px;
+  line-height: 1.17;
+  color: #2196f3;
+}
+
+.mobile-list-network {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-top: 64px;
+  letter-spacing: 0.02em;
+}
+
+.menu-mobile-network {
+  color: #2196f3;
+  display: inline-block;
+}
+
+.nav-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .hero {
