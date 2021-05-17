@@ -647,6 +647,10 @@ html {
   color: #212121;
 }
 
+.mobile-current-link {
+  color: var(--accent-text-color);
+}
+
 .menu-mobile-link {
   margin-bottom: 32px;
 }
@@ -698,6 +702,13 @@ html {
   position: absolute;
   top: 20px;
   right: 25px;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
+.mobile-menu-close:hover, .mobile-menu-close:focus {
+  fill: var(--accent-text-color);
 }
 
 .menu-mobile .container {

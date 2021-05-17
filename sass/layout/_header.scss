@@ -145,6 +145,9 @@
   letter-spacing: 0.02em;
   color: #212121;
 }
+.mobile-current-link {
+  color: var(--accent-text-color);
+}
 .menu-mobile-link {
   margin-bottom: 32px;
 }
@@ -190,6 +193,13 @@
   position: absolute;
   top: 20px;
   right: 25px;
+  background-color: white;
+  outline: none;
+  border: none;
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
 }
 .menu-mobile .container {
   position: relative;
