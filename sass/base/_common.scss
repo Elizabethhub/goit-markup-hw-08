@@ -36,3 +36,13 @@ html {
 .link {
   text-decoration: none;
 }
+.logo {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &__colortext {
+    color: var(--accent-text-color);
+  }
+}
