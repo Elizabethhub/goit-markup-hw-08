@@ -189,7 +189,25 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="list section-list team-list">
           <li class="team-item">
-            <img class="team-img" src="./images/img1.jpg" alt="фото Игоря Демьяненко" />
+            <picture>
+              <source
+                srcset="./images/our-team/teamDesktop/webp/img-1.webp 1x, ./images/our-team/teamDesktop/webp/img@2x-1.webp 2x"
+                media="(min-width: 1200px)" type="image/webp">
+              <source srcset="./images/our-team/teamDesktop/img-1.jpg 1x, ./images/our-team/teamDesktop/img@2x-1.jpg 2x"
+                media="(min-width: 1200px)">
+              <source
+                srcset="./images/our-team/teamTablet/webp/img-1.webp 1x, ./images/our-team/teamTablet/webp/img@2x-1.webp 2x"
+                media="(min-width: 768px)" type="image/webp">
+              <source srcset="./images/our-team/teamTablet/img-1.jpg 1x, ./images/our-team/teamTablet/img@2x-1.jpg 2x"
+                media="(min-width: 768px)">
+              <source
+                srcset="./images/our-team/teamMobile/webp/img-1.webp 1x, ./images/our-team/teamMobile/webp/img@2x-1.webp 2x"
+                media="(max-width: 767px)" type="image/webp">
+              <source srcset="./images/our-team/teamMobile/img-1.jpg 1x, ./images/our-team/teamMobile/img@2x-1.jpg 2x"
+                media="(max-width: 767px)">
+              <img class="team-img" src="./images/img1.jpg" alt="фото Игоря Демьяненко" />
+            </picture>
+
             <div class="team-list-content">
               <h3 class="name-title no-margin">Игорь Демьяненко</h3>
               <p class="position">Product Designer</p>
