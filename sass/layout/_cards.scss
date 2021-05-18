@@ -11,15 +11,23 @@
 
 .card-name {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
+  font-size: 14px;
+  line-height: 1.7;
   letter-spacing: 0.06em;
   color: #212121;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 2;
+  }
 }
 .card-description {
-  font-size: 16px;
-  line-height: 1.87;
+  font-size: 12px;
+  line-height: 1.17;
   color: #757575;
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 .card-list {
   display: block;
@@ -77,8 +85,8 @@
   height: 100%;
   padding: 63px 24px;
 
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 14px;
+  line-height: 1.17;
 
   overflow-y: scroll;
 
@@ -91,5 +99,9 @@
     visibility: visible;
     pointer-events: auto;
     transform: translateY(0);
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 1.56;
   }
 }

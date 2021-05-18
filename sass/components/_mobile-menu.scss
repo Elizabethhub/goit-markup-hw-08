@@ -1,0 +1,125 @@
+.menu-mobile {
+  z-index: 50;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  max-width: 480px;
+  height: 100vh;
+  left: 50%;
+  top: 0;
+  padding: 20px 0;
+  transform: translateX(-50%);
+  overflow-y: scroll;
+  overflow-x: scroll;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  @media screen and (min-width: 480px) {
+    padding: 48px 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.menu-mobile-link {
+  display: inline-block;
+
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+    line-height: 1.17;
+  }
+}
+.mobile-current-link {
+  color: var(--accent-text-color);
+}
+.menu-mobile-link {
+  margin-bottom: 32px;
+}
+.mobile-list-contacts {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+.menu-mobile-contacts {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: #757575;
+}
+.menu-mobile-contacts.mobile-tel {
+  font-size: 18px;
+  line-height: 1.17;
+  color: #2196f3;
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+    line-height: 1.17;
+  }
+}
+.mobile-list-network {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-top: 64px;
+
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+.menu-mobile-network {
+  color: #2196f3;
+  display: inline-block;
+}
+.nav-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.mobile-menu-close {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  background-color: white;
+  outline: none;
+  border: none;
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+}
+.menu-mobile .container {
+  position: relative;
+  height: 100%;
+}
+
+.menu-mobile-network {
+  padding: 0 5px;
+  @media screen and (min-width: 480px) {
+    padding: 0 10px;
+  }
+}
+.network-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
