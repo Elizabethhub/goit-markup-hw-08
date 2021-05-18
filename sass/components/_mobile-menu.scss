@@ -22,7 +22,7 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-  .is-open {
+  &.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -98,6 +98,7 @@
   height: 100%;
 }
 .mobile-menu-close {
+  z-index: 100;
   position: absolute;
   top: 21px;
   right: 21px;

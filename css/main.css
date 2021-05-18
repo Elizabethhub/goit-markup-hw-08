@@ -318,7 +318,6 @@ html {
   transform: translate(-50%, -50%);
   width: 95vw;
   max-width: 450px;
-  max-height: 610px;
   height: 95vh;
   overflow-y: scroll;
   background-color: #ffffff;
@@ -443,7 +442,7 @@ html {
 .modal-form-term-desc {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.16;
   color: var(--primary-text-color);
   margin-bottom: 30px;
@@ -514,7 +513,7 @@ html {
   }
 }
 
-.menu-mobile .is-open {
+.menu-mobile.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -608,6 +607,7 @@ html {
 }
 
 .mobile-menu-close {
+  z-index: 100;
   position: absolute;
   top: 21px;
   right: 21px;
